@@ -43,39 +43,46 @@
                 <div class="navbar-start">
                     <div class="navbar-center hidden md:hidden lg:flex">
                         <ul class="menu menu-horizontal px-1 text-lg text-white">
-                          <li><a href="">Home</a></li>
-                          <li><a href="">About us</a></li>
-                          <li><a href="">Shop</a></li>
-                          <li><a href="">All Fruits</a></li>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About us</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">All Fruits</a></li>
                         </ul>
-                      </div>
-                  <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
-                    </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Homepage</a></li>
-                      <li><a>Portfolio</a></li>
-                      <li><a>About</a></li>
-                    </ul>
-                  </div>
+                    </div>
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Homepage</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>About</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="navbar-center">
                     <img class="w-12 " src="./images/logo.png" alt="">
-                  <a class="btn btn-ghost normal-case text-4xl text-white">Fruit Burst</a>
+                    <a class="btn btn-ghost normal-case text-4xl text-white">Fruit Burst</a>
 
                 </div>
                 <div class="navbar-end hidden md:hidden lg:block">
-                    <div class="flex items-center justify-between border rounded-3xl bg-white px-16 py-3">
+                    <div class="flex items-center justify-between border rounded-3xl bg-white mx-10 px-8 py-3">
                         <!-- Input field -->
                         <input class="w-full focus:outline-none" type="text" placeholder="Search Here">
-                         <!-- Search icon -->
-                         <svg class="h-6 w-6 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l5.5 5.5M21 9a8 8 0 11-16 0 8 8 0 0116 0z"/>
-                          </svg>
-                      </div>
+                        <!-- Search icon -->
+                        <svg class="h-6 w-6 text-gray-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 15l5.5 5.5M21 9a8 8 0 11-16 0 8 8 0 0116 0z" />
+                        </svg>
+                    </div>
                 </div>
-              </div>
+            </div>
         </nav>
 
     </header>
@@ -183,7 +190,8 @@
             <div class="flex flex-col lg:flex-row gap-12 mb-10 ">
                 <div class="flex-1 space-y-4 justify-center items-center">
                     <h2 class="text-5xl font-extrabold">Deal of the day</h2>
-                    <p class="text-base text-[#12121299] font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece
+                    <p class="text-base text-[#12121299] font-medium">Contrary to popular belief, is not simply random
+                        text. It has roots in a piece
                         of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <div class="flex-1 justify-center">
@@ -217,9 +225,9 @@
                 </div>
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-4 gap-10 mb-10">
-                <div class="card  bg-base-100 border">
-                    <figure><img src="./images/fruit6.png" alt="images" /></figure>
-                    <div class="card-body">
+                <div class="card  bg-base-100 border ">
+                    <figure><img class="p-10" src="./images/fruit6.png" alt="images" /></figure>
+                    <div class="card-body ">
                         <h2 class="card-title justify-center text-2xl border-b-2 pb-6">12.90$ - 18.85$</h2>
                         <p class="text-center text-base pt-6 text-[#12121299]">Apples</p>
                         <div class="rating justify-center my-3">
@@ -229,11 +237,38 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <a class="text-center text-lg text-[#F85559] font-bold" href="">Details</a>
+                        <!-- The button to open modal -->
+                        <label for="my_modal_6"
+                            class="btn bg-white border-0 text-[#F85559] font-extrabold capitalize">Details</label>
+
+                        <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+                        <div class="modal">
+                            <div class="modal-box">
+                                <div class="flex flex-col space-y-6 justify-center items-center">
+                                    <img class="content-center" src="./images/fruit6.png" alt="">
+                                    <h3 class="font-extrabold text-xl text-center">Apples</h3>
+                                    <p class="py-4 text-center text-base text-[#12121299]">Professional employees are
+                                        there for you to pick the most <br>amazing and fresh fruits.</p>
+                                    <div class="rating justify-center my-3">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                    <div class="modal-action">
+                                        <label for="my_modal_6" class="btn">Close!</label>
+                                        <label for="my_modal_6" class="btn bg-[#F85559] text-white">Buy Now</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="card  bg-base-100 border">
-                    <figure><img src="./images/fruit7.png" alt="images" /></figure>
+                    <figure><img class="p-10" src="./images/fruit7.png" alt="images" /></figure>
                     <div class="card-body">
                         <h2 class="card-title justify-center text-2xl border-b-2 pb-6">12.90$ - 18.85$</h2>
                         <p class="text-center text-base pt-6 text-[#12121299]">Orange</p>
@@ -244,11 +279,37 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <a class="text-center text-lg text-[#F85559] font-bold" href="">Details</a>
+                        <!-- The button to open modal -->
+                        <label for="my_modal_7"
+                            class="btn bg-white border-0 text-[#F85559] font-extrabold capitalize">Details</label>
+
+                        <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+                        <div class="modal">
+                            <div class="modal-box">
+                                <div class="flex flex-col space-y-6 justify-center items-center">
+                                    <img class="content-center" src="./images/fruit7.png" alt="">
+                                    <h3 class="font-extrabold text-xl text-center">Orange</h3>
+                                    <p class="py-4 text-center text-base text-[#12121299]">Professional employees are
+                                        there for you to pick the most <br>amazing and fresh fruits.</p>
+                                    <div class="rating justify-center my-3">
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                            checked />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    </div>
+                                    <div class="modal-action">
+                                        <label for="my_modal_7" class="btn">Close!</label>
+                                        <label for="my_modal_7" class="btn bg-[#F85559] text-white">Buy Now</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card  bg-base-100 border">
-                    <figure><img src="./images/fruit8.png" alt="images" /></figure>
+                    <figure><img class="p-10" src="./images/fruit8.png" alt="images" /></figure>
                     <div class="card-body">
                         <h2 class="card-title justify-center text-2xl border-b-2 pb-6">12.90$ - 18.85$</h2>
                         <p class="text-center text-base pt-6 text-[#12121299]">Red Dragon</p>
@@ -259,11 +320,34 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <a class="text-center text-lg text-[#F85559] font-bold" href="">Details</a>
+                        <!-- The button to open modal -->
+                        <label for="my_modal_8" class="btn bg-white border-0 text-[#F85559] font-extrabold capitalize">Details</label>
+
+                        <input type="checkbox" id="my_modal_8" class="modal-toggle" />
+                        <div class="modal">
+                            <div class="modal-box">
+                                <div class="flex flex-col space-y-6 justify-center items-center">
+                                <img class="content-center" src="./images/fruit8.png" alt="">
+                                <h3 class="font-extrabold text-xl text-center">Red Dragon</h3>
+                                <p class="py-4 text-center text-base text-[#12121299]">Professional employees are there for you to pick the most <br>amazing and fresh fruits.</p>
+                                <div class="rating justify-center my-3">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <div class="modal-action">
+                                    <label for="my_modal_8" class="btn">Close!</label>
+                                    <label for="my_modal_8" class="btn bg-[#F85559] text-white">Buy Now</label>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
                 <div class="card  bg-base-100 border">
-                    <figure><img src="./images/fruit9.png" alt="images" /></figure>
+                    <figure><img class="p-10" src="./images/fruit9.png" alt="images" /></figure>
                     <div class="card-body">
                         <h2 class="card-title justify-center text-2xl border-b-2 pb-6">12.90$ - 18.85$</h2>
                         <p class="text-center text-base pt-6 text-[#12121299]">Banana</p>
@@ -274,7 +358,30 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                         </div>
-                        <a class="text-center text-lg text-[#F85559] font-bold" href="">Details</a>
+                        <!-- The button to open modal -->
+                        <label for="my_modal_9" class="btn bg-white border-0 text-[#F85559] font-extrabold capitalize">Details</label>
+
+                        <input type="checkbox" id="my_modal_9" class="modal-toggle" />
+                        <div class="modal">
+                            <div class="modal-box">
+                                <div class="flex flex-col space-y-6 justify-center items-center">
+                                <img class="content-center" src="./images/fruit9.png" alt="">
+                                <h3 class="font-extrabold text-xl text-center">Banana</h3>
+                                <p class="py-4 text-center text-base text-[#12121299]">Professional employees are there for you to pick the most <br>amazing and fresh fruits.</p>
+                                <div class="rating justify-center my-3">
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                </div>
+                                <div class="modal-action">
+                                    <label for="my_modal_9" class="btn">Close!</label>
+                                    <label for="my_modal_9" class="btn bg-[#F85559] text-white">Buy Now</label>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
                     </div>
                 </div>
 
@@ -371,7 +478,8 @@
 
             <div class="text-center space-y-3 text-black">
                 <h2 class="text-5xl font-extrabold">Why Choose Us</h2>
-                <p class="text-base text-[#12121299]">Contrary to popular belief, is not simply random text. It has roots in a piece
+                <p class="text-base text-[#12121299]">Contrary to popular belief, is not simply random text. It has
+                    roots in a piece
                     of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
 
@@ -384,7 +492,8 @@
                         <div class="">
 
                             <h2 class="text-2xl border-b-2 pb-3 font-extrabold">Dedicated Team</h2>
-                            <p class="text-base pt-3 font-medium text-[#12121299] ">Professional employees are there for you to pick the most
+                            <p class="text-base pt-3 font-medium text-[#12121299] ">Professional employees are there for
+                                you to pick the most
                                 amazing
                                 and fresh fruits.</p>
                         </div>
@@ -396,7 +505,8 @@
                         <div class="">
 
                             <h2 class="text-2xl border-b-2 pb-3 font-extrabold">Fresh is Best</h2>
-                            <p class="text-base pt-3 font-medium text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <p class="text-base pt-3 font-medium text-[#12121299]">Professional employees are there for
+                                you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                     <div class="flex  gap-3 justify-center items-center">
@@ -406,7 +516,8 @@
                         <div class="">
 
                             <h2 class="text-2xl border-b-2 pb-3 font-extrabold">Gift Certificates</h2>
-                            <p class="text-base pt-3 font-medium text-[#12121299]">PProfessional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <p class="text-base pt-3 font-medium text-[#12121299]">PProfessional employees are there for
+                                you to pick the most amazing and fresh fruits.</p>
                         </div>
                     </div>
                 </div>
@@ -419,7 +530,8 @@
                         <div class="text-right ">
 
                             <h2 class="text-2xl border-b-2 pb-3 font-extrabold">Integrated Supplier</h2>
-                            <p class="font-medium pt-3 text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <p class="font-medium pt-3 text-[#12121299]">Professional employees are there for you to
+                                pick the most amazing and fresh fruits.</p>
                         </div>
                         <img class="bg-gray-200 rounded-full w-16 h-16 p-5" src="./images/fruit 1.svg" alt="">
 
@@ -429,7 +541,8 @@
                         <div class="text-right">
 
                             <h2 class="text-2xl border-b-2 pb-3 font-extrabold">Sustainable Practice</h2>
-                            <p class="text-base font-medium pt-3 text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <p class="text-base font-medium pt-3 text-[#12121299]">Professional employees are there for
+                                you to pick the most amazing and fresh fruits.</p>
                         </div>
                         <img class="bg-gray-200 rounded-full w-16 h-16 p-5" src="./images/ice-cream 1.svg" alt="">
 
@@ -439,7 +552,8 @@
                         <div class="text-right">
 
                             <h2 class="text-2xl border-b-2 pb-3 font-extrabold">The Benefits Only</h2>
-                            <p class="text-base font-medium pt-3 text-[#12121299]">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                            <p class="text-base font-medium pt-3 text-[#12121299]">Professional employees are there for
+                                you to pick the most amazing and fresh fruits.</p>
                         </div>
                         <img class="bg-gray-200 rounded-full w-16 h-16 p-5" src="./images/like 1.svg" alt="">
 
